@@ -1,0 +1,19 @@
+.hero-section {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
+}
+
+.trending-recipes, .popular-categories {
+    background-color: #f8f9fa;
+}
+
+.popular-categories .rounded-circle {
+    width: 150px;
+    height: 150px;
+}
+
+.nav-item{
+    color: black;
+    background-color: #B55D51;
+}
