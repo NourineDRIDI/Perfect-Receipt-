@@ -14,7 +14,6 @@ function goToLogin() {
     window.location.href = 'index.html';
 }
 
-// Add this script to handle form submission and display user email in verification page
 document.addEventListener('DOMContentLoaded', function() {
     const registerForm = document.querySelector('.register-form form');
     if (registerForm) {
