@@ -29,3 +29,41 @@ p {
 .btn-link {
     color: #d9534f;
 }
+.hero-section {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
+}
+
+.trending-recipes, .popular-categories {
+    background-color: #f8f9fa;
+}
+
+.popular-categories .rounded-circle {
+    width: 150px;
+    height: 150px;
+}
+
+.nav-item{
+    color: black;
+    background-color: #B55D51;
+}
+
+
+.category-img {
+        width: 100px; 
+        height: 100px; 
+        border-radius: 50%; 
+        object-fit: cover; 
+        margin: 0 auto; 
+}
+
+.custom-btn {
+    background-color: #B66055;
+    border-color: #B66055;
+    color: white;
+}
+
+.custom-text {
+    color: #B66055;
+}
