@@ -1,3 +1,4 @@
+//
 function goBack() {
     window.history.back();
 }
@@ -11,16 +12,19 @@ function googleLogin() {
 }
 
 function goToLogin() {
+    window.location.href = 'login_new.html'; 
+}
+
+function goToHome() {
     window.location.href = 'index.html';
 }
 
-// Add this script to handle form submission and display user email in verification page
 document.addEventListener('DOMContentLoaded', function() {
-    const registerForm = document.querySelector('.register-form form');
+    const registerForm = document.getElementById('registerForm');
     if (registerForm) {
         registerForm.addEventListener('submit', function(event) {
             event.preventDefault();
-            const email = document.getElementById('email').value;
+            const email = document.getElementById('exampleInputEmail2').value;
             localStorage.setItem('userEmail', email);
             window.location.href = 'verification.html';
         });
@@ -32,4 +36,3 @@ document.addEventListener('DOMContentLoaded', function() {
         userEmailElement.textContent = userEmail;
     }
 });
-
