@@ -23,13 +23,6 @@ function validateEmail(email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     return re.test(String(email).toLowerCase())
 }
-// check boxes : 
-document.querySelectorAll('form input[type="checkbox"]').forEach((checkbox) => {
-    checkbox.addEventListener('change', function () {
-      const label = this.nextElementSibling;
-      label.style.textDecoration = this.checked ? 'line-through' : 'none';
-    });
-  });
 
 
 
@@ -50,7 +43,7 @@ function goToLogin() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    const registerForm = document.querySelector('.register-form form');
+    const registerForm = document.querySelector('.form');
     if (registerForm) {
         registerForm.addEventListener('submit', function(event) {
             event.preventDefault();
