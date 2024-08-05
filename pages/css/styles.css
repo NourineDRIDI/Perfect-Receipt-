@@ -1,0 +1,28 @@
+.error {
+    color: red;
+    font-size: 0.875rem;
+}
+#successMessage {
+    display: none;
+    color: green;
+}
+
+.modal-dialog {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 500px;
+}
+.modal-content {
+    border-radius: 0;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-out;
+}
+.modal.show .modal-content {
+    transform: translateY(0);
+}
+.modal-backdrop {
+    display: none; 
+}

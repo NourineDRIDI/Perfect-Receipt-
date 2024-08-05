@@ -23,13 +23,6 @@ function validateEmail(email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     return re.test(String(email).toLowerCase())
 }
-// check boxes : 
-document.querySelectorAll('form input[type="checkbox"]').forEach((checkbox) => {
-    checkbox.addEventListener('change', function () {
-      const label = this.nextElementSibling;
-      label.style.textDecoration = this.checked ? 'line-through' : 'none';
-    });
-  });
 
 
 
@@ -46,21 +39,17 @@ function googleLogin() {
 }
 
 function goToLogin() {
-    window.location.href = 'login.html'; 
-}
-
-function goToHome() {
     window.location.href = 'index.html';
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('form');
-    if (form) {
-        form.addEventListener('submit', function(event) {
+    const registerForm = document.querySelector('.form');
+    if (registerForm) {
+        registerForm.addEventListener('submit', function(event) {
             event.preventDefault();
-            const email = document.getElementById('exampleInputEmail2').value;
+            const email = document.getElementById('email').value;
             localStorage.setItem('userEmail', email);
-            window.location.href = 'verification.html'
+            window.location.href = 'verification.html';
         });
     }
 
@@ -70,5 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
         userEmailElement.textContent = userEmail;
     }
 })
+
 
 
